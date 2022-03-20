@@ -34,5 +34,19 @@ python3 -m pip install -U pip
 # Snap installs
 snap install core discord
 
+# Install Ghidra
+git clone https://github.com/NationalSecurityAgency/ghidra.git /usr/bin/ghidra
+ln -s /usr/bin/ghidra/ghidraRun /usr/bin/ghidraRun
+
 # Point to Fprint driver
-echo "Check out: https://gist.github.com/d-k-bo/15e53eab53e2845e97746f5f8661b224"
+echo -e "\n\nFigerprint\n\tCheck out: https://gist.github.com/d-k-bo/15e53eab53e2845e97746f5f8661b224"
+
+# List gnome extensions to install
+echo -e "\nGnome extensions:"
+echo -e "\tPlaces Status Indicator: https://extensions.gnome.org/extension/8/places-status-indicator/"
+echo -e "\tArcMenu: https://extensions.gnome.org/extension/3628/arcmenu/"
+echo -e "\tLaunch new instance: https://extensions.gnome.org/extension/600/launch-new-instance/"
+echo -e "\tRemovable Drive Menu: https://extensions.gnome.org/extension/7/removable-drive-menu/"
+echo -e "\tTactile: https://extensions.gnome.org/extension/4548/tactile/"
+echo -e "\tVitals: https://extensions.gnome.org/extension/1460/vitals/"
+echo -e "\tWorkspace Indicator: https://extensions.gnome.org/extension/21/workspace-indicator/"
