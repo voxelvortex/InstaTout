@@ -25,8 +25,8 @@ curl -s 'https://download.opensuse.org/repositories/home:/ungoogled_chromium/Deb
 # Update again
 apt-get update -y && apt-get upgrade -y
 
-# Install main apt stuff
-apt-get install -y ungoogled-chromium librewolf code python3 python3-pip python3-wheel docker-compose docker.io zsh gdb p7zip-full git iputils-* dnsutils net-tools handbrake* ffmpeg htop nano vim neovim nmap nvidia-detect ncat ssh tree vlc snapd obs-studio audacity filezilla
+# Install my default apt stuff
+apt-get install -y ungoogled-chromium librewolf code python3 python3-pip python3-wheel docker-compose docker.io zsh p7zip-full git iputils-* dnsutils net-tools htop nano vim neovim ncat ssh tree vlc snapd neofetch
 
 # Update python pip
 python3 -m pip install -U pip
@@ -38,15 +38,4 @@ snap install core discord
 git clone https://github.com/NationalSecurityAgency/ghidra.git /usr/bin/ghidra
 ln -s /usr/bin/ghidra/ghidraRun /usr/bin/ghidraRun
 
-# Point to Fprint driver
-echo -e "\n\nFigerprint\n\tCheck out: https://gist.github.com/d-k-bo/15e53eab53e2845e97746f5f8661b224"
 
-# List gnome extensions to install
-echo -e "\nGnome extensions:"
-echo -e "\tPlaces Status Indicator: https://extensions.gnome.org/extension/8/places-status-indicator/"
-echo -e "\tArcMenu: https://extensions.gnome.org/extension/3628/arcmenu/"
-echo -e "\tLaunch new instance: https://extensions.gnome.org/extension/600/launch-new-instance/"
-echo -e "\tRemovable Drive Menu: https://extensions.gnome.org/extension/7/removable-drive-menu/"
-echo -e "\tTactile: https://extensions.gnome.org/extension/4548/tactile/"
-echo -e "\tVitals: https://extensions.gnome.org/extension/1460/vitals/"
-echo -e "\tWorkspace Indicator: https://extensions.gnome.org/extension/21/workspace-indicator/"
