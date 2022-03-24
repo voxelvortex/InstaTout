@@ -15,4 +15,4 @@ modprobe -r iwlwifi && modprobe iwlwifi
 # If wired networking is working, but gnome doesnt recognize it properly, check out this post:
 # https://forums.debian.net/viewtopic.php?t=104561
 
-$LOC/finalize.sh
+sh $LOC/finalize.sh
