@@ -3,7 +3,7 @@ USER=$2
 
 7z x $LOC -o./files/temp/$USER/
 
-mv ./files/temp/$USER/* /home/$USER/
+cp -vR ./files/temp/$USER/* /home/$USER/
 
 
 echo "Hit ENTER when files finish transferring..."
