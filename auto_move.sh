@@ -1,7 +1,7 @@
 LOC=$1
 USER=$2
 
-7z x $LOC.zip -o./files/temp/$USER/
+7z x $LOC -o./files/temp/$USER/
 
 mv ./files/temp/$USER/* /home/$USER/
 
