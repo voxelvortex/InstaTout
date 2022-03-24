@@ -1,9 +1,6 @@
 # unprivileged user's name, change this if it isnt right
 USER="michael"
 
-# Move files to home dir
-mv ./files/InstallMe /home/$USER
-
 
 # List gnome extensions to install
 echo -e "\nGnome extensions:"
