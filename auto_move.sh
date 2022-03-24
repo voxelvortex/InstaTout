@@ -1,22 +1,25 @@
 LOC=$1
-USER=$2
+LOCAL_USER=$2
 
-7z x $LOC -o./files/temp/$USER/
+7z x $LOC -o./files/temp/$LOCAL_USER/
 
-cp -vR ./files/temp/$USER/* /home/$USER/
+cp -vR ./files/temp/$LOCAL_USER/* /home/$LOCAL_USER/
 
 
 echo "Hit ENTER when files finish transferring..."
-read
 
+neofetch
 
-chown -R $USER /home/$USER
-chgrp -R $USER /home/$USER
+chown -R $LOCAL_USER /home/$LOCAL_USER
+chgrp -R $LOCAL_USER /home/$LOCAL_USER
 
 rm ~/.zshrc
 rm ~/.config/neofetch/config.conf
 rm ~/.gitconfig
 
-ln -s /home/$USER/.zshrc ~/.zshrc
-ln -s /home/$USER/.config/neofetch/config.conf ~/.config/neofetch/config.conf
-ln -s /home/$USER/.gitconfig ~/.gitconfig
+ln -s /home/$LOCAL_USER/.zshrc ~/.zshrc
+ln -s /home/$LOCAL_USER/.config/neofetch/config.conf ~/.config/neofetch/config.conf
+ln -s /home/$LOCAL_USER/.gitconfig ~/.gitconfig
+
+echo `cat ./files/.bashrc` >> /home/$LOCAL_USER/.bashrc
+echo `cat ./files/.bashrc` >> ~/.bashrc
