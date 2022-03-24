@@ -1,6 +1,3 @@
-# install laptop utils via tasksel
-tasksel install laptop
-
 # Copy over unstable repo stuff
 cp ./files/unstable.list /etc/apt/sources.list.d/unstable.list
 cp ./preferences /etc/apt/preferences
