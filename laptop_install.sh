@@ -13,4 +13,4 @@ tasksel install laptop
 # Point to Fprint driver
 echo -e "\n\nFigerprint\n\tCheck out: https://gist.github.com/d-k-bo/15e53eab53e2845e97746f5f8661b224"
 
-$LOC/finalize.sh
+sh $LOC/finalize.sh
