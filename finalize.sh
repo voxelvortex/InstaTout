@@ -1,6 +1,8 @@
 # unprivileged user's name, change this if it isnt right
 USER="michael"
 
+usermod --shell /bin/zsh root
+usermod --shell /bin/zsh $USER
 
 # List gnome extensions to install
 echo -e "\nGnome extensions:"
