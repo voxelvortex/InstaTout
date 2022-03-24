@@ -1,6 +1,6 @@
 # Copy over unstable repo stuff
 cp ./files/unstable.list /etc/apt/sources.list.d/unstable.list
-cp ./preferences /etc/apt/preferences
+cp ./files/preferences /etc/apt/preferences
 
 # Install gnome
 apt-get update &&\
