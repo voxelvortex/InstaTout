@@ -1,8 +1,9 @@
 # unprivileged user's name, change this if it isnt right
-USER="michael"
+LOCAL_USER="michael"
 
+# change default shells for root and unpriv-user to zsh
 usermod --shell /bin/zsh root
-usermod --shell /bin/zsh $USER
+usermod --shell /bin/zsh $LOCAL_USER
 #usermod -aG sudo $USER
 
 # List gnome extensions to install
