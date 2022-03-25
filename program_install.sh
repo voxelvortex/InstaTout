@@ -26,7 +26,7 @@ curl -s 'https://download.opensuse.org/repositories/home:/ungoogled_chromium/Deb
 apt-get update -y && apt-get upgrade -y
 
 # Install my default apt stuff
-apt-get install -y ungoogled-chromium librewolf firefox-esr code python3 python3-pip python3-wheel docker-compose docker.io zsh p7zip-full git iputils-* dnsutils net-tools htop progress nano vim neovim ncat ssh tree vlc snapd neofetch zip unzip
+apt-get install -y ungoogled-chromium librewolf firefox-esr code python3 python3-pip python3-wheel docker-compose docker.io zsh p7zip-full git iputils-* dnsutils net-tools htop progress nano vim neovim ncat ssh tree vlc snapd neofetch zip unzip cryptsetup
 
 # Update python pip
 python3 -m pip install -U pip
