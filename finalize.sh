@@ -14,5 +14,5 @@ echo -e "\tRemovable Drive Menu: https://extensions.gnome.org/extension/7/remova
 echo -e "\tTactile: https://extensions.gnome.org/extension/4548/tactile/"
 echo -e "\tVitals: https://extensions.gnome.org/extension/1460/vitals/"
 echo -e "\tWorkspace Indicator: https://extensions.gnome.org/extension/21/workspace-indicator/"
-echo -e "\thttps://extensions.gnome.org/extension/595/autohide-battery/"
-echo -e "\thttps://extensions.gnome.org/extension/906/sound-output-device-chooser/"
+echo -e "\tAutohide Battery: https://extensions.gnome.org/extension/595/autohide-battery/"
+echo -e "\tSound Input & Output Device Chooser: https://extensions.gnome.org/extension/906/sound-output-device-chooser/"
