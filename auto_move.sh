@@ -1,7 +1,11 @@
 LOC=$1
 LOCAL_USER=$2
 
-7z x $LOC -o./files/temp/$LOCAL_USER/
+7z x $LOC -o./files/temp/
+
+mv ./files/temp/Laptop ./files/temp/$LOCAL_USER/ ||\
+mv ./files/temp/Desktop ./files/temp/$LOCAL_USER/
+
 
 cp -vR ./files/temp/$LOCAL_USER/* /home/$LOCAL_USER/
 
