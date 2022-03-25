@@ -3,6 +3,7 @@ USER="michael"
 
 usermod --shell /bin/zsh root
 usermod --shell /bin/zsh $USER
+#usermod -aG sudo $USER
 
 # List gnome extensions to install
 echo -e "\nGnome extensions:"
