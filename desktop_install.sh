@@ -1,6 +1,11 @@
-LOC="./.auto-install"
-git clone https://gitea.voxelvortex.tk:443/voxelvortex/InstaTout.git $LOC
+LOC=$1
 
+if [ -z "$1" ]
+  then
+    LOC="./.auto-install"
+fi
+
+git clone https://gitea.voxelvortex.tk:443/voxelvortex/InstaTout.git $LOC
 
 # Install all the generic programs
 $LOC/program_install.sh
